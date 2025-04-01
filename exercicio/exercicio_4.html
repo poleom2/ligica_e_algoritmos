@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"id="numero1">;
+    <input type="text"id="numero2">;
+    <button onclick="suma_de_numeros()"> resultado</button>
+  <script>
+    function suma_de_numeros(){
+        var numero1 =parseInt(document.getElementById("numero1").value);
+        var numero2 =parseInt(document.getElementById("numero2").value);
+        var resultadoSoma = numero1 + numero2;
+        alert("A suma entre " + numero1 +" e " +numero2 +" e iguel " + resultadoSoma);
+
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"id="multiplicacao_e_divisao"placeholder="digite un numero">
+    <button onclick="va_a_dividir_e_multiplicar()"> resultado</button>
+<script>
+function va_a_dividir_e_multiplicar(){
+
+var numero_digitado =Number(document.getElementById("multiplicacao_e_divisao").value);
+var multiplicacao =(numero_digitado * 2);
+var divisaon= (numero_digitado / 3)
+alert("O dobro de "+ numero_digitado+ " e igual "+ multiplicacao+ " a terca parte de "+numero_digitado+" e igual "+ divisaon)
+}
+
+</script>
+
+
+</body>
+</html>
