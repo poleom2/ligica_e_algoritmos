@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"id="convertir_dinero_em_dolar"placeholder="dinero em reales">
+<button onclick="convertir_a_dolar()">resultado</button>
+<script>
+    function convertir_a_dolar(){
+        var reales =Number(document.getElementById("convertir_dinero_em_dolar").value);
+var cambio=(reales / 5.75);
+alert(reales+" e igual a  US$"+ cambio);
+
+}
+</script>
+
+
+
+</body>
+</html>

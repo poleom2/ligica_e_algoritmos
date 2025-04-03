@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"id="primer digito"placeholder="A">
+    <input type="text"id="segundo digito"placeholder="B">
+    <input type="text"id="tercer digito"placeholder="C">
+    <button onclick="Allar_delta()">respota</button>
+    <script>
+function Allar_delta(){
+
+var primer_valor_digitado=Number(document.getElementById("primer digito").value);
+var segundo_valor_digitado=Number(document.getElementById("segundo digito").value);
+var tercer_valor_digitado=Number(document.getElementById("tercer digito").value);
+var B_al_cuadrado=(segundo_valor_digitado * segundo_valor_digitado);
+var sustracion=(B_al_cuadrado - primer_valor_digitado- tercer_valor_digitado);
+alert("O valor de Delta e "+ sustracion)
+
+
+}
+
+    </script>
+
+</body>
+</html>

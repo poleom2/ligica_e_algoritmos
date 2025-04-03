@@ -7,12 +7,19 @@
 </head>
 <body>
     
-    <input type="text"id="distancia"placeholder="medida">
+    <input type="text"id="distancia em metro"placeholder="medida em metro">
     <button onclick="comvetir_a_medida()">resultado da medida </button>
     <script>
 function comvetir_a_medida(){
 var medida_degitada= Number(document.getElementById("distancia").value);
+var kilometro = (medida_degitada / 1000);
+var hectametro= (medida_degitada / 100);
+var decametro=(medida_degitada / 10);
+var metro2=(medida_degitada*1)
+var centrimetro =(medida_degitada* 10);
+var milimetro=(medida_degitada*100)
 
+alert("A distancia de" + medida_degitada+ " e "+ kilometro+"Km "+hectametro+"Hm "+decametro+"Dam "+metro2+"2dm "+ centrimetro+"Cm "+milimetro+"mm ");
 
 }
 
