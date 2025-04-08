@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"id="nome_do_funcionario"placeholder="digite seu nome">
+    <input type="text"id="salario actual"placeholder="digite seu salario">;
+    <button onclick="mostrar_o_Aumeento_do_salario()"> resultado</button>
+<script>
+function mostrar_o_Aumeento_do_salario(){
+    var nome=(document.getElementById("nome_do_funcionario").value);
+    var valor_do_salario=Number(document.getElementById("salario actual").value);
+    var novo_salario=(valor_do_salario*15);
+    var aumento=(novo_salario / 100);
+    var resultado= aumento+ valor_do_salario;
+alert(nome+ " seu salario actual é de "+valor_do_salario+" e con aumento fica em "+ resultado);
+}
+
+</script>
+
+</body>
+</html>

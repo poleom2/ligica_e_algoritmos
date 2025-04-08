@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"id="anoDeNacimento" value="">
+    <button onclick="Verificar_A_edade()">resultado</button>
+    <script>
+        function Verificar_A_edade(){
+            var Ano = Number(document.getElementById("anoDeNacimento").value);
+            var edade= 2025-Ano;
+
+            if(edade>18){
+                
+                alert("Vocé tem "+edade+" anos, tem edade suficiente para votar" );
+            }else{
+                alert(" Vocé tem "+ edade+" anos, não tem edade suficiente para votar");
+
+            }
+            
+        }
+    </script>
+</body>
+</html>
