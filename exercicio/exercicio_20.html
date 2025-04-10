@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"id="Numero_entero" value="">
+    <button onclick="VerificacaoDeNumeroEntero()">Resultado</button>
+    <script>
+        function VerificacaoDeNumeroEntero(){
+            var valorDigitado = Number(document.getElementById("Numero_entero").value);
+            if(valorDigitado % 2==0){
+                alert("Seu numero "+ valorDigitado+" ele é PAR")
+                }else{
+                    alert("Seu numero "+valorDigitado+" ele é ÍPAR")
+                }
+
+        }
+    </script>
+</body>
+</html>

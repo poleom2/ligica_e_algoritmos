@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"id="Ano_Digitado" value="">
+    <button onclick="VerificacaoDosAnosBissexto()">Resultado</button>
+        <script>
+            function VerificacaoDosAnosBissexto(){
+                var Ano =Number(document.getElementById("Ano_Digitado").value);
+                    if(Ano%4==0){
+                        
+                        alert("O ano "+Ano+" ele é Bissexto");
+                    }else{
+                    alert("O ano "+Ano+" ele não é Bissexto");    
+                    }
+
+            }
+        </script>
+</body>
+</html>

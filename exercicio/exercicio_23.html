@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nome<input type="text"id="nomeDaPessoa" value="">
+    Preço<input type="text"id="preco" value="">
+    Sexo M o F <input type="text"id="SexoDaPesso" value="">
+    <button onclick="Desconto_das_Mulheres()">Resultado</button>
+    <script>
+        function Desconto_das_Mulheres(){
+                var nome=document.getElementById("nomeDaPessoa").value;
+                var preco1=Number(document.getElementById("preco").value);
+                var sexo=document.getElementById("SexoDaPesso").value;
+                    if(sexo=="F"){
+                            var descontoFeminino = preco1*13;
+                            var desconto=descontoFeminino/100;
+                            var descontototalfeminino=preco1-desconto;
+                             alert(nome +"Hoje por ser o dia da mulher voce ganho um desconto expecial, seu valor normal e de "+preco1+" e ficou em "+descontototalfeminino);
+           }else{
+            var home= preco1*5;
+            var descontohome= home /100;
+            var descontototalhome=preco1-descontohome;
+            alert(nome+" sua conta é de "+preco1+" voce tem um desconto do 5% sua conta ficara em "+descontototalhome);
+           }
+        }
+    </script>
+</body>
+</html>

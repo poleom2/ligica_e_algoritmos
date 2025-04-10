@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"id="Distancia" value="">
+<button onclick="calcularovalordapassagem()">Resultado</button>
+<script>
+    function calcularovalordapassagem(){
+        var Distancia= Number(document.getElementById("Distancia").value);
+if(Distancia<200){
+var Preçokilometro=Distancia*0.50;
+alert("O valor da passagem é de " +Preçokilometro);
+
+}else{
+    var preco=Distancia*0.45;
+    alert("O valor da passagem é de "+preco);
+}
+    
+
+    }
+</script>
+</body>
+</html>

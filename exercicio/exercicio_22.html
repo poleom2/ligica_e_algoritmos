@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="text"id="AnoDeNacscimento" value=""> 
+   <button onclick="EdadeDaPessoaEmRelacaoAoAlistamentoMilitar()">Resultado</button>
+        <script>
+            function EdadeDaPessoaEmRelacaoAoAlistamentoMilitar(){
+                var anoDeNacimento=Number(document.getElementById("AnoDeNacscimento").value);
+                var Edade=2025-anoDeNacimento;
+                var AnosQueFaltan= Edade-18;
+                var AonoApis = 18-Edade
+                if(Edade>=18){
+
+                    alert("Vocé tem "+Edade+",anos de edade. Tem "+AonoApis+" Anos que passaram para seu alistamento Por favor compadesser na policia. Brigado");
+                }else{
+                    alert("Vocé tem "+Edade+",anos de edade. faltam "+AnosQueFaltan+" para seu alistamento, consulte de novo quando tenha os 18 anos de edade.Brigado")
+                }
+
+            }
+            </script>
+</body>
+</html>
