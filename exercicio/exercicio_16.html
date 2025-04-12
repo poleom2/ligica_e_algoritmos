@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Cigarros fumados <input type="text"id="Cigarros" value="">
+    Anos que vocé ja fumo <input type="text"id="anoosfumados" value="">
+    <button onclick="TempoDeVidaDeUmFumante()">Resultado</button>
+    <script>
+        function TempoDeVidaDeUmFumante(){
+            var anoosfumados=document.getElementById("anoosfumados").value;
+            var Cigarros=Number(document.getElementById("Cigarros").value);
+            var minutosDeUmDia=1440*anoosfumados;
+            var minutos=Cigarros*10;
+            var minutosPierdiasPorOCigarro=minutosDeUmDia-minutos;
+            var hoasPerdias
+
+
+
+        }
+    </script>
+</body>
+</html>

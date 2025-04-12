@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nome <input type="text"id="nome" value="">
+    Dias <input type="text"id="Dias" value="">
+    <button onclick="SaberOSalario()">Resultado</button>
+    <script>
+        function SaberOSalario(){
+            var nome= document.getElementById("nome").value;
+            var dia=Number(document.getElementById("Dias").value);
+            var horasDoTrabalho=dia*8;
+            var valorDasHoras= horasDoTrabalho*25;
+            alert(nome+" Seu salario por hoas trabalhada é "+valorDasHoras);
+
+        }
+    </script>
+</body>
+</html>

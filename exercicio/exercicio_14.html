@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nome <input type="text"id="nome" value="">
+    kilometro <input type="text"id="kilometro" value="">
+    Dias <input type="text"id="dias" value="">
+            <button onclick="calcular_servicio_prestado()">Resultado</button>
+                <script>
+                    function calcular_servicio_prestado(){
+                        var nome=document.getElementById("nome").value;
+                        var kilometros= Number(document.getElementById("kilometro").value);
+                        var Dias = Number(document.getElementById("dias").value);
+                        var precoDosDias=Dias*90;
+                        var valorDosKilometro=kilometros*0.20;
+                        var Total_A_pagar=valorDosKilometro+precoDosDias;
+                        alert(nome+" Seu valor a pagar es "+Total_A_pagar);
+                    }
+                </script>
+</body>
+</html>

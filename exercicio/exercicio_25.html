@@ -6,6 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <input type="text"id="segmento1" value="">
+    <input type="text"id="segmento2" value="">
+    <input type="text"id="segmento3" value="">
+    <button onclick="Procurar_triangulo()">Resultado</button>
+<script>
+    function Procurar_triangulo(){
+    var A=Number(document.getElementById("segmento1").value);
+    var B=Number(document.getElementById("segmento2").value);
+    var C=Number(document.getElementById("segmento3").value);
+    var primerValor=A+B;
+    var segundoValor=A+C;
+    var tercerValor=B+C;
+    if(primerValor>C && segundoValor>B &&tercerValor>A){
+        alert("Com os valores "+A +" "+B+" "+C +" se pode formar um triangulo");
+
+    }else{
+        alert("Con os valores "+A+" "+B+" "+C+" não pode formar um triangulo");
+    }
+
+    }
+</script>
 </body>
 </html>
