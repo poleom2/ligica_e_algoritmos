@@ -18,14 +18,25 @@
     var primerValor=A+B;
     var segundoValor=A+C;
     var tercerValor=B+C;
-    if(primerValor>C && segundoValor>B &&tercerValor>A){
+    if(primerValor>C ){
         alert("Com os valores "+A +" "+B+" "+C +" se pode formar um triangulo");
-
+        if(segundoValor>B){
+            alert("Com os valores "+A +" "+B+" "+C +" se pode formar um triangulo");
+            if(tercerValor>A){
+                alert("Com os valores "+A +" "+B+" "+C +" se pode formar um triangulo");
+            }else{
+                alert("Con os valores "+A+" "+B+" "+C+" não pode formar um triangulo");
+            }
+        }else{
+            alert("Con os valores "+A+" "+B+" "+C+" não pode formar um triangulo");
+        }
     }else{
         alert("Con os valores "+A+" "+B+" "+C+" não pode formar um triangulo");
+
     }
 
     }
+
 </script>
 </body>
 </html>

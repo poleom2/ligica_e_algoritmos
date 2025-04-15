@@ -13,12 +13,12 @@
         function TempoDeVidaDeUmFumante(){
             var anoosfumados=document.getElementById("anoosfumados").value;
             var Cigarros=Number(document.getElementById("Cigarros").value);
-            var minutosDeUmDia=1440*anoosfumados;
-            var minutos=Cigarros*10;
-            var minutosPierdiasPorOCigarro=minutosDeUmDia-minutos;
-            var hoasPerdias
-
-
+           var cigarrosFumadosEmMInutos=Cigarros*10;
+           var cigarrosEmHoras=cigarrosFumadosEmMInutos/60;
+           var diasFumados=cigarrosEmHoras*365;
+           var diasQuePerdiou=diasFumados/24;
+           var totalEnDIAs=diasQuePerdiou*anoosfumados;
+           alert("Por "+anoosfumados+" anos vocé fumo "+Cigarros+" cigarros, vocé perdiu "+totalEnDIAs+" dias de vida ");
 
         }
     </script>
