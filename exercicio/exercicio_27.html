@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=in, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"id="nota1" value="">
+    <input type="text"id="nota2" value="">
+    <button onclick="calcular_A_Media()">Resultado</button>
+    <script>
+        function calcular_A_Media(){
+            var nota1=Number(document.getElementById("nota1").value);
+            var nota2=Number(document.getElementById("nota2").value);
+            var sumaDasNotas= nota1+nota2;
+            var divisionDasNotas=sumaDasNotas/2;
+            if(divisionDasNotas>=7.0){
+                alert("Vocé esta APROVADO");
+
+            }if(divisionDasNotas<=6.9&&divisionDasNotas>=5.0){
+                alert("Voce entro em RECUPERAÇÃO");
+            }if(divisionDasNotas<4.9){
+                alert("Voce esta REPROVADO");
+            }
+
+        }
+    </script>
+</body>
+</html>

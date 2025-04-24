@@ -10,14 +10,30 @@
     <button onclick="VerificacaoDosAnosBissexto()">Resultado</button>
         <script>
             function VerificacaoDosAnosBissexto(){
-                var Ano =Number(document.getElementById("Ano_Digitado").value);
-                    if(Ano%4==0){
-                        
-                        alert("O ano "+Ano+" ele é Bissexto");
-                    }else{
-                    alert("O ano "+Ano+" ele não é Bissexto");    
-                    }
+                var ano=Number(document.getElementById("Ano_Digitado").value); 
+                if(ano% 4==0){
+                    alert(" O ano "+ano+" ele é bixesto")
 
+                    if(ano% 100==0){
+                        alert(" O ano "+ano+" ele é bixesto")
+
+                        if(ano% 400==0){
+                            alert(" O ano "+ano+" ele é bixesto")
+                        }else{
+                            alert(" O ano "+ano+" ele não é bixesto")
+
+                        }
+                    }else{
+                        alert(" O ano "+ano+" ele é bixesto")
+                    
+                    }
+                }  else{
+                    alert(" O ano "+ano+" ele não é bixesto")
+
+                }            
+                        
+                            
+                            
             }
         </script>
 </body>

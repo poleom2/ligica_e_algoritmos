@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"id="largura" value="">
+    <input type="text"id="comprimento" value="">
+    <button onclick="Calcular_A_Area_De_Um_Terreno()">Resultado</button>
+    <script>
+        function Calcular_A_Area_De_Um_Terreno(){
+            var largura=Number(document.getElementById("largura").value);
+            var comprimento=Number(document.getElementById("comprimento").value);
+            var area =largura*comprimento;
+            if(area<100){
+                alert(area+"m2 TERRENO POPULAR");
+            }if(area>=100&&area<=500){
+                alert(area+"m2 TERRENO MASTER");
+
+            }if(area>500){
+                alert(area+"m2 TERRENO VIP")
+            }
+        }
+    </script>
+</body>
+</html>

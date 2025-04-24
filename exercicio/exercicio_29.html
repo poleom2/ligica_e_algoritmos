@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  Nome  <input type="text"id="nome" value="">
+  Salario  <input type="text"id="salario" value="">
+  Anos de trabalho <input type="text"id="anosDeTrabalho" value="">
+    <button onclick="aumento_De_Salario()">Resultado</button>
+    <script>
+        function aumento_De_Salario(){
+            var nome=document.getElementById("nome").value;
+            var salario=Number(document.getElementById("salario").value);
+            var anosDeTrabalho=Number(document.getElementById("anosDeTrabalho").value);
+            if(anosDeTrabalho<3){
+                var menoresA3AnosSalario=salario*3;
+                var menorA3AnosDivision=menoresA3AnosSalario/100;
+                var menorA3anosNovoSalario=menorA3AnosDivision+salario;
+                alert(nome+" Seu novo salaeio é "+menorA3anosNovoSalario);
+            }if(anosDeTrabalho>=3&&anosDeTrabalho<=10){
+            var maiorA3AnosSalario=salario*12.5;
+            var maiorA3AnosDivision=maiorA3AnosSalario/100;
+            var maiorA3AnosNovoSalario=maiorA3AnosDivision+salario;
+                alert(nome+" Seu novo salaeio é "+maiorA3AnosNovoSalario);
+       
+            }if(anosDeTrabalho>10){
+                var amuentoDe10AnosDeTrabalho=salario*20;
+                var amuentoDe10AnosDeTrabalhoDivision=amuentoDe10AnosDeTrabalho/100;
+                var amuentoDe10AnosNovo=amuentoDe10AnosDeTrabalhoDivision+salario;
+                alert(nome+" Seu novo salaeio é "+amuentoDe10AnosNovo);
+            }
+        }
+    </script>
+</body>
+</html>
