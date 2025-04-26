@@ -6,17 +6,50 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text"id="campo1" value="">
-    <input type="text"id="campo2" value="">
+    Jogo de pedra, papel e tesoura</BR></BR>
+    Pedra equivale á o numero 1</BR></BR>
+    Papel equivale á o numero 2</BR></BR>
+    Tesoura equivale á o numero 3</BR></BR>
+    Jugador 1 </BR><input type="text"id="campo1" value="">
+    jugador 2 <input type="text"id="campo2" value="">
     <button onclick="criar_Um_Jogo()">Resultado</button>
     <script>
         function criar_Um_Jogo(){
             var campo1=Number(document.getElementById("campo1").value);
-            var campo1=Number(document.getElementById("campo2").value);
-            
-
-           
-        }
+            var campo2=Number(document.getElementById("campo2").value);
+            if((campo1<1||campo1>3)||(campo2<1||campo2>3))
+            {
+                alert("Voce digitou um numero errado!")
+            }
+            else if(campo1==1&&campo2==2)
+            {
+                alert( "Ganho o jogador 2")
+            }
+            else if(campo1==2&&campo2==1)
+            {
+                alert("Ganho o jogador 1")
+            }
+            else if(campo1==2&&campo2==3)
+            {
+                alert("Ganho o jogador 2")
+            }
+            else if(campo1==3&&campo2==2)
+            {
+                alert("Ganho o jogador 1")
+            } 
+            else if(campo1==3&&campo2==1)
+            {
+                alert("Ganho o jogador 2")
+            }
+            else if(campo1==1&&campo2==3)
+            {
+                alert("Ganho o jogador 1")
+            }
+            else if(campo1==campo2)
+            {
+                alert("EMPATE")
+            }
+        }          
     </script>
 </body>
 </html>

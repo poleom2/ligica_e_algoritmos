@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    SORTEO DO RIO GRANDE DO SUL</BR></BR>
+    DIGITE O NUMERO<input type="text"id="numeroSorteado" value="">
+    <button onclick="DescubirONumeroSorteado()">Sorte</button>
+    
+    <script>
+        var numeroAleatorio=Math.floor((Math.random()*6)+0);
+        function DescubirONumeroSorteado(){
+            var numeroSorteado=Number(document.getElementById("numeroSorteado").value);
+            if(numeroAleatorio==numeroSorteado){
+                alert("Parabens voce ganho o sorteo")
+            }else{
+                alert(" Voce não ganho! tente novamente.")
+            }
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  Valor da casa  <input type="text"id="valorDasCasa" value="">
+ Seu salario   <input type="text"id="salario" value="">
+   Anos a pagar <input type="text"id="anosAApagar" value="">
+    <button onclick="emprestamoBancario()">Resultado</button>
+    <script>
+        function emprestamoBancario(){
+            var valorDasCasa= Number(document.getElementById("valorDasCasa").value);
+            var salario= Number(document.getElementById("salario").value);
+            var anosAApagar= Number(document.getElementById("anosAApagar").value);
+            var o30porciento=salario*30;
+            var divisionDo30Porciento=o30porciento/100;
+            var  emprestamoEnAnos=divisionDo30Porciento*12;
+            var valorDoEmprestamo=emprestamoEnAnos*anosAApagar;
+            if(valorDoEmprestamo>=valorDasCasa){
+                alert("voce tem "+valorDoEmprestamo+" reales pode fazer seu emprestimo")
+            }else{
+                alert("Seu valor liverado é de "+valorDoEmprestamo.toFixed(2)+" reales, infelismente não pode comprar a casa! ")
+            }
+
+        }
+    </script>
+</body>
+</html>

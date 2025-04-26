@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Altura <input type="text"id="altura" value="">
+    Peso <input type="text"id="peso" value="">
+    <button onclick="calcularAClacificacionDoPesoDaPessoa()">Resultado</button>
+    <script>
+        function calcularAClacificacionDoPesoDaPessoa(){
+            var altura=Number(document.getElementById("altura").value);
+            var peso=Number(document.getElementById("peso").value);
+            var carculaMasaDoCorpo= altura*altura;
+            var MasaDoCorpo=peso/carculaMasaDoCorpo;
+            if(MasaDoCorpo<18.5){
+                alert(MasaDoCorpo+" Abaixo do peso normal")
+            }else if(MasaDoCorpo>=18.5&&MasaDoCorpo<25){
+                alert(MasaDoCorpo+" Peso ideal ")
+            }else if(MasaDoCorpo>=25&&MasaDoCorpo<30){
+                alert(MasaDoCorpo+" Sobrepeso")
+            }else if(MasaDoCorpo>=30){
+                alert(MasaDoCorpo+" Obesidade")
+            }
+        }
+    </script>
+</body>
+</html>
