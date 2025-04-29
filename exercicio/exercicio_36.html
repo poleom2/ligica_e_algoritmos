@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   digite cuantas horas voce fez de atividade ficica </BR><input type="text"id="punto" value="">
+    <button onclick="PuntosPorActividade()">Resultado</button>
+    <script>
+        function PuntosPorActividade(){
+            var horas=Number(document.getElementById("punto").value);
+            if(horas<10){
+                var punto2=horas*5;
+                var puntovalor0=punto2*0.05;
+               
+                alert("Voce tem "+punto2+" puntos, e ganho "+ puntovalor0);
+            }else if(horas>=10||horas<20){
+                var puntos5=horas*5;
+                var  puntosHoras5=puntos5*0.05;
+                alert("Voce tem "+puntos5+" puntos, e ganho "+puntosHoras5);
+
+            }else if(horas>=20){
+                var puntos10=horas*5;
+                var puntosHoras10=puntosHoras10*0.05;
+                alert("Voce tem "+puntos10+" puntos, e ganho "+puntosHoras10);
+            }
+            }
+    </script>
+</body>
+</html>

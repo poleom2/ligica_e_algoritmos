@@ -6,6 +6,37 @@
     <title>Document</title>
 </head>
 <body>
-    
+Carro popular/luxo</BR> Calocar "1" si es de luxo e "2" se é popular </BR><input type="text"id="CarroPopular_Luxo" value=""></BR>
+Dias de alugel</BR><input type="text"id="DiasDeAlugel" value=""></BR>
+Kilometros recorridos</BR><input type="text"id="Kilometros" value=""></BR>
+    <button onclick="Calcular_o_alugel_de_um_carro()">Resultado</button>
+    <script>
+        function Calcular_o_alugel_de_um_carro(){
+            var carroPopular_Luxo=document.getElementById("CarroPopular_Luxo").value;
+            var diasDeAlugel=Number(document.getElementById("DiasDeAlugel").value);
+            var kilometros=Number(document.getElementById("Kilometros").value);
+            var diasAlugadoluxo=diasDeAlugel*150;
+        if(carroPopular_Luxo=="1"){
+            
+            var KilometrosRecorridos=kilometros*0.30
+            var sumaCarroLuxo=diasAlugadoluxo+KilometrosRecorridos;
+           alert("Seu valor á pagar é de "+sumaCarroLuxo);
+
+        }else if(kilometros>=200){
+            var KilometroAcimaDe200Luxo=kilometros*0.25;
+            var sumaCarroLuxoAcimaDe200=KilometroAcimaDe200Luxo+diasAlugadoluxo;
+            alert("Seu valor á pagar é de "+sumaCarroLuxoAcimaDe200);
+        }else if(carroPopular_Luxo==2){
+            var carropopularAlugado=diasDeAlugel*90;
+            var kilometroPopular=kilometros*0.20;
+            var sumaPopular=kilometroPopular+carropopularAlugado;
+            alert("Seu valor á pagar é de "+sumaPopular)
+        }else{
+            var kilometroPopularAcimaDe100=kilometros*0.10;
+            var sumaPopularAcimaDe100=kilometroPopularAcimaDe100+carropopularAlugado;
+            alert("Seu valor á pagar é de "+sumaPopularAcimaDe100);
+        }
+    }
+    </script>
 </body>
 </html>
