@@ -18,30 +18,47 @@
             var Anos=Number(document.getElementById("Anos").value);
             var salario=Number(document.getElementById("salario").value);
             if(Sexo==2)
-            {if(Anos<15){
-                var MultiplicacaoAnosMenor15=salario*5;
-                var DivisionAnosMenor15=MultiplicacaoAnosMenor15/100;
-                var sumaAnosMenor15=MultiplicacaoAnosMenor15+salario;
-                alert("Seu novo salario é de "+sumaAnosMenor15);
-            }if(Anos>=15||Anos<=20){
-                var multipicacaoMayor15=salario*12;
-                var divisionMayor15=multipicacaoMayor15/10;
-                var sumaMayor15=divisionMayor15+salario;
-                alert("Seu novo salario é de "+sumaMayor15);
-            } if(Anos>20){
-                var multipicacaoMayor20mulher=salario*23;
-                var divisionMayor20Mulher=multipicacaoMayor20mulher/100;
-                var sumaMayor20mulher=divisionMayor20Mulher+salario;
-                alert("Seu novo salario é de "+sumaMayor20mulher);
-            }
-            }else{
-                if(Anos<20){
+                {if(Anos<15){
+                    var MultiplicacaoAnosMenor15=salario*5;
+                    var DivisionAnosMenor15=MultiplicacaoAnosMenor15/100;
+                    var sumaAnosMenor15=MultiplicacaoAnosMenor15+salario;
+                    alert("Seu novo salario é de "+sumaAnosMenor15);
+                }else if(Anos>=15&&Anos<=20){
+                    var multipicacaoMayor15=salario*12;
+                    var divisionMayor15=multipicacaoMayor15/10;
+                    var sumaMayor15=divisionMayor15+salario;
+                    alert("Seu novo salario é de "+sumaMayor15);
+                }else if(Anos>20){
+                    var multipicacaoMayor20mulher=salario*23;
+                    var divisionMayor20Mulher=multipicacaoMayor20mulher/100;
+                    var sumaMayor20mulher=divisionMayor20Mulher+salario;
+                    alert("Seu novo salario é de "+sumaMayor20mulher);
+                }
+            }else if(Sexo==1)
+            { if(Anos<20){
                     var MultiplicacaoMenor20=salario*3;
                     var divisionMenor20=MultiplicacaoMenor20/100;
+                    var sumaMenor20=divisionMenor20+salario;
+                    alert("Seu novo salario é de "+sumaMenor20);
+
+                }else if(Anos>=20&&Anos<30){
+                    var multiplicacionMayor20homen=salario*13;
+                    var DivisionMayor20Homen=multiplicacionMayor20homen/100;
+                    var sumaMayor20Homen=DivisionMayor20Homen+salario;
+                    alert("Seu novo salario é de "+sumaMayor20Homen);
+
+                }else if(Anos>=30){
+                    var multiplicacionMayor30=salario*25;
+                    var divisionMayor30=multiplicacionMayor30/100;
+                    var sumatotalMAyor30=salario+divisionMayor30;
+                    alert("Seu novo salario é de "+sumatotalMAyor30);
+
                 }
-            }
-      
+            }else{
+                    alert(" Escriva um numero valido que corresponda ao sexo da pessoa")
+                }
         }
+        
     </script>
 </body>
 </html>
