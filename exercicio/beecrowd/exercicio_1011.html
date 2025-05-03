@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><input type="text"id="calculo" value="">
+<body><input type="text"id="calculo2" value="">
+
+    <button onclick="calculo3()">Resultado</button>
+    <script>
+function calculo3(){
+
+var  line= (document.getElementById("calculo").value);
+var  linha2= (document.getElementById("calculo").value);
+    
+        var linhas=line.split(" ");
+        var dato1=linhas[0];
+        var dato2=linhas[1];
+        var dato3=linhas[2];
+        var  triangulo=dato1*dato3;
+        var triangulo_1=triangulo/2;
+        var circulo=dato3*dato3;
+        var circulo_1=3.14159*circulo ;
+        var trapezio=dato1+dato2;
+        var trapezio_1=trapezio/2;
+        var trapezio_2=trapezio_1*dato3;
+       
+        var cuadro=dato2*dato2;
+        var retangulo=dato1*dato2;
+        console.log("TRIANGULO: "+triangulo_1.toFixed(3));
+        console.log("CIRCULO: "+circulo_1.toFixed(3));
+        console.log("TRAPEZIO: "+trapezio_2.toFixed(3));
+        console.log("QUADRADO: "+cuadro.toFixed(3));
+        console.log("RETANGULO: "+retangulo.toFixed(3));
+    }
+    </script>
+</body>
+</html>
