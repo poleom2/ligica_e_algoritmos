@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <input type="text"id="linha" value="">
+    <button onclick="testo()">click </button>
+    <script>
+        function testo()
+        {
+            var linea= (document.getElementById("linha").value);
+            
+            var  datos = linea.split(" ");
+            var A = Number (datos[0]);
+            var B = Number (datos[1]);
+            var C = Number (datos[2]);
+                if(A > B && A > C){
+                    console.log(A+" eh o maior");
+                }else if(B>A && B>C){
+                    console.log(B+" eh o maior");
+                }else{
+                    console.log(C+" eh o maior")
+                }
+        }   
+    </script>
+</body>
+</html>
