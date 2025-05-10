@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var numeroInicial= Number(prompt("Digite ó numero inicial"));
+        var numeroFinal = Number(prompt("Digite ó numero final da sua contage"));
+        var numeroIncremento = Number( prompt(" Digite ó numero  para incrementar "));
+         var numero=("")
+         if(numeroInicial<numeroFinal){
+         for( var i =numeroInicial; i<numeroFinal;i+=numeroIncremento){ 
+          numero=numero+i+" ";
+        }console.log(numero+" Acabou!");
+            }else{
+                for( var i =numeroFinal; i<numeroInicial;i+=numeroIncremento){ 
+          numero=numero+i+" ";
+        }console.log(numero+" Acabou!");
+            }
+    </script>
+    
+</body>
+</html>
