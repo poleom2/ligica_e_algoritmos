@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload= function()
+        {  
+            var homem=0
+            var mulheres=0
+            var mediaGrupo =0
+            var mediaHomem=0
+            var mulherMaior=0
+            for( var i=0;i<5;i++)
+            {
+                var edade= Number(prompt("Digite sua edade"))
+                var sexo=  prompt("Digite 'H' se é homem e'M' se é mulher")
+              
+               
+                if( sexo=="H")
+                {
+                    homem++;
+                    mediaHomem=mediaHomem+edade;
+                }
+                if(sexo=="M")
+                {
+                    mulheres++
+                }
+                if((sexo=="M")&&(edade>=20 && edade<=54))
+                {
+                    mulherMaior++;
+                }
+                var mediaGrupo= mediaGrupo+edade;
+
+            } var division=mediaGrupo/5;
+              var divisionHomem=mediaHomem/homem
+
+              console.log(homem)
+              console.log(mulheres)
+              console.log(division)
+              console.log(divisionHomem)
+              console.log(mulherMaior)
+        }
+    </script>
+</body>
+</html>

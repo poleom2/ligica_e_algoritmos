@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload= function()
+        {   var media=0;
+            var anos18=0;
+            var menor5anos= 0;
+            var edadeamayor =0;
+           
+            for( var i=0;i<10;i++)
+            {
+                var edade_digitado= Number(prompt("Digite as edades"));
+                 
+                media=media +edade_digitado;
+                
+                
+
+                if(edade_digitado>18)
+                {
+                    anos18++;
+                }
+                if(edade_digitado<5){
+                    menor5anos++ ;
+                  
+                }
+                if(edadeamayor<edade_digitado)
+                {
+                edadeamayor=edade_digitado;
+                }
+            }  var division = media /10;
+            console.log(division);
+            console.log(anos18);
+            console.log(menor5anos);
+            console.log(edadeamayor);
+        }
+    </script>
+</body>
+</html>
