@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var numeroAleatorio=Math.floor((Math.random()*11)+0);
+        for(var i=0; i<4; i++)
+        {
+            var numeroDigitado=prompt("Digite o numero sortiado")
+            if(numeroDigitado==numeroAleatorio)
+            {
+                console.log("Voce ganho o sorteo!")
+                alert("Voce ganho o sorteo!")
+                i=4
+            }else
+            {
+                console.log("Voce não ganho o sorteo tente novamente!")
+                alert("Voce não ganho o sorteo tente novamente!")
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

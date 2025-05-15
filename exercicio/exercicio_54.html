@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+        window.onload= function()
+        {  
+            var pesoMais90k=0
+            var pesoMenos50k=0
+            var mediaGrupoAltura =0
+            var AlturaMaisDe1_90=0
+           
+            for( var i=0;i<7;i++)
+            {
+                var peso= Number(prompt("Digite seu peso"))
+                var altura= Number (prompt("Digite sua altura"))
+              
+               
+                if( altura>1.90)
+                {
+                    AlturaMaisDe1_90++;
+                   
+                }
+                if(peso<=50)
+                {
+                    pesoMenos50k++
+                }
+                if(peso>=90)
+                {
+                    pesoMais90k++;
+                }
+                 mediaGrupoAltura=mediaGrupoAltura+altura;
+
+            } var division=mediaGrupoAltura/7;
+              
+              console.log(AlturaMaisDe1_90)
+              console.log(division)
+              console.log(pesoMais90k)
+              console.log(pesoMenos50k)
+        }
+    </script>
+    
+</body>
+</html>
