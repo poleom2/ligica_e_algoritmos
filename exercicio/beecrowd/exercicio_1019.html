@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var valor= Number(lines[0]);
+        var hora= Math.floor(valor/3600);
+        valor=valor%3600
+        var minutos=Math.floor (valor/60);
+          valor=valor%60
+        var segundo=valor
+
+        console.log(hora+":"+minutos+":"+segundo)
+    </script>
+</body>
+</html>
