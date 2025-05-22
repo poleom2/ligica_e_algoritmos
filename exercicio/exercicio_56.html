@@ -11,24 +11,18 @@
     window.onload =function ()
     {
          var suma= 0
-         var fixo=1111
          
-         for(var i=0; ;i++)
+         
+         for(var i = 0; i < 1 ; i++)
          {
             var numeroDigitado=Number(prompt("Digite o numero para sumar")) 
            
-            if(numeroDigitado==fixo)
+            if(numeroDigitado!=1111)
             {
-              
-                alert("Voce encerro o programa")
-            
-              
-            }else
-            {
-                suma=suma+numeroDigitado
+              suma=suma+numeroDigitado;
                 
-                
-             
+                i--;
+               
             }
          }console.log(suma)
     }
