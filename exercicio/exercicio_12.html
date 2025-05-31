@@ -9,12 +9,12 @@
     <input type="text"id="producto"placeholder="preco do producto">
     <button onclick="mostrae_preco_promocional()"> resultado </button>
 <script>
-function mostrae_preco_promocional(){
-var preco = Number(document.getElementById("producto").value);
-var desconto=(preco * 5)/100;
-var preco_total=(preco- desconto)
-alert("O valor do produto e " + preco_total)
-
+function mostrae_preco_promocional()
+{
+    var preco = Number(document.getElementById("producto").value);
+    var desconto=(preco * 5)/100;
+    var preco_total=(preco- desconto)
+    alert("O valor do produto e " + preco_total)
 }
 
 </script>

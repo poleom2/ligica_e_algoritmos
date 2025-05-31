@@ -11,14 +11,13 @@
 <button onclick="calcular_a_area()">resultado</button>
 <script>
 
-function calcular_a_area(){
+function calcular_a_area()
+{
     var dato_da_altura =Number(document.getElementById("Altura").value);
-var dato_de_largura= Number(document.getElementById("largura").value);
-var metro2=(dato_da_altura*dato_de_largura);
-var quantidade_de_tinta=(metro2 / 2);
-alert("Calculo em metros cuadrado "+ metro2+ " tinta necesaria para o servico "+quantidade_de_tinta);
-
-
+    var dato_de_largura= Number(document.getElementById("largura").value);
+    var metro2=(dato_da_altura*dato_de_largura);
+    var quantidade_de_tinta=(metro2 / 2);
+    alert("Calculo em metros cuadrado "+ metro2+ " tinta necesaria para o servico "+quantidade_de_tinta);
 }
 </script>
 </body>

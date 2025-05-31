@@ -10,13 +10,14 @@
     <input type="text"id="salario actual"placeholder="digite seu salario">;
     <button onclick="mostrar_o_Aumeento_do_salario()"> resultado</button>
 <script>
-function mostrar_o_Aumeento_do_salario(){
+function mostrar_o_Aumeento_do_salario()
+{
     var nome=(document.getElementById("nome_do_funcionario").value);
     var valor_do_salario=Number(document.getElementById("salario actual").value);
     var novo_salario=(valor_do_salario*15);
     var aumento=(novo_salario / 100);
     var resultado= aumento+ valor_do_salario;
-alert(nome+ " seu salario actual é de "+valor_do_salario+" e con aumento fica em "+ resultado);
+    alert(nome+ " seu salario actual é de "+valor_do_salario+" e con aumento fica em "+ resultado);
 }
 
 </script>

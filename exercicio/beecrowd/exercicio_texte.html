@@ -7,31 +7,33 @@
 </head>
 <body>
     <script>
+        window.onload= function()
+        {
         var n=Number(lines[0]);
-        var nota100=Math.floor(numero/100);
+        var nota100=Math.floor(n/100);
             n=n%100;
-        var nota50=Math.floor(nota100/50);
+        var nota50=Math.floor(n/50);
         n=n%50;
-        var nota20=Math.floor(nota50/20);
+        var nota20=Math.floor(n/20);
         n=n%20;
-        var nota10=Math.floor(nota20/10);
+        var nota10=Math.floor(n/10);
         n=n%10;
-        var nota5=Math.floor(nota10/5);
+        var nota5=Math.floor(n/5);
         n=n%5;
-        var nota2=Math.floor(nota5/2);
+        var nota2=Math.floor(n/2);
         n=n%2;
-        var moeda1r=Math.floor(nota2/1);
+        var moeda1r=Math.floor(n/1);
         n=n%1;
-        var moeda50=Math.floor(moeda1r/0.50.toFixed(2));
+        var moeda50=Math.floor(n/0.50.toFixed(2));
         n=n%0.50;
-        var moeda25=Math.floor(moeda50/0.25.toFixed(2));
+        var moeda25=Math.floor(n/0.25.toFixed(2));
         n=n%0.25;
-        var moeda10=Math.floor(moeda25/0.10.toFixed(2));
+        var moeda10=Math.floor(n/0.10.toFixed(2));
         n=n%0.10;
-        var moeda5=Math.floor(moeda10/0.5.toFixed(2));
-        n=n%0.05
-        var moeda1=Math.floor(moeda5/0.1.toFixed(2));
-        
+        var moeda5=Math.floor(n/0.05.toFixed(2));
+        n=n%0.05;
+        var moeda1=Math.round(n/0.01.toFixed(2));
+        console.log("NOTAS:")
         console.log(nota100+" nota(s) de R$ 100.00")
         console.log(nota50+" nota(s) de R$ 50.00")
         console.log(nota20+" nota(s) de R$ 20.00")
@@ -41,11 +43,12 @@
         console.log("MOEDAS:")
         console.log(moeda1r+" moeda(s) de R$ 1.00")
         console.log(moeda50+" moeda(s) de R$ 0.50")
-        console.log(moeda25+" moeda(s) de R$ 0.20")
+        console.log(moeda25+" moeda(s) de R$ 0.25")
         console.log(moeda10+" moeda(s) de R$ 0.10")
-        console.log(moeda5+" moeda(s) de R$ 0.5")
+        console.log(moeda5+" moeda(s) de R$ 0.05")
         console.log(moeda1+" moeda(s) de R$ 0.01")
-      
+
+      }
     </script>
 </body>
 </html>

@@ -9,12 +9,13 @@
     <input type="text"id="antecessor_sucessor" placeholder="digite um numero">
     <button onclick="va_buscar_o_numero_antecessor_e_sucesor()">resultaso</button>
     <script>
-        function va_buscar_o_numero_antecessor_e_sucesor(){
+        function va_buscar_o_numero_antecessor_e_sucesor()
+        {
 
-            var entrada_de_dato = Number(document.getElementById("antecessor_sucessor").value);
-var numeroAntecesor=(entrada_de_dato - 1)
-var numerosucessor=(entrada_de_dato + 1)
-alert("O antecesor de " + entrada_de_dato+ " e "+ numeroAntecesor+ " O sucessor de "+entrada_de_dato+ " e "+ numerosucessor)
+        var entrada_de_dato = Number(document.getElementById("antecessor_sucessor").value);
+        var numeroAntecesor=(entrada_de_dato - 1)
+        var numerosucessor=(entrada_de_dato + 1)
+        alert("O antecesor de " + entrada_de_dato+ " e "+ numeroAntecesor+ " O sucessor de "+entrada_de_dato+ " e "+ numerosucessor)
     
         }
     </script>
