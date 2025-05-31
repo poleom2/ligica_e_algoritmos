@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         window.onload = function()
+        {
+            var arraiDeNumero=[]
+           
+            
+            
+        
+            for(var i = 0; i < 15; i++)
+            {
+                var numeroAleatorio=Math.floor((Math.random()*100)+0);
+                arraiDeNumero[i] = numeroAleatorio
+            }
+
+            for(var j = 0; j < arraiDeNumero.length; j++)
+            {
+                if(arraiDeNumero[j]<arraiDeNumero[j+1])
+                {
+                    arraiDeNumero=arraiDeNumero[j]-arraiDeNumero[j-1]
+                 
+                }
+            
+            }
+           
+            console.log(arraiDeNumero[]);
+             
+        }
+    </script>
+</body>
+</html>
